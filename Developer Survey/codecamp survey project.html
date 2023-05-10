@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="surveystyle.css">
+        <title>Survey form</title>
+    </head>
+    <body></body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking a time to filing up this survey.</p>
+    <form id="survey-form">
+        <fieldset>
+        <label id="name-label" >Name <input type="text" id="name" required placeholder="Enter your name"></label>
+        </fieldset>
+        <fieldset>
+            <label id="email-label">Email <input type="email" id="email" required placeholder="Enter your Email"></label>
+        </fieldset>
+        <fieldset>
+        <label id="number-label">Age <input type="number" id="number" min="0" max="100" placeholder="Age">
+        </label>
+        </fieldset>
+        <fieldset>
+            <label>Which option best describes your current role? 
+                <select id="dropdown" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="fulltime">Full Time Job</option>
+                    <option value="Futiler">Full Time Learner</option>
+                </select>
+              </label>
+        </fieldset>
+        <fieldset>
+            <label>what do you like to drink while coding?</label>
+             <label><input type="radio" name="drink" value="coffee" class="inline" checked> Coffee</label>
+             <label><input type="radio" value="tea" name="drink" class="inline"> Tea</label>
+                </fieldset>
+                    <fieldset>
+                        <label>What is your favourite programming language? (Check all that apply) 
+                            <label><input type="checkbox" checked value="python" name="lan" class="inline"> Python</label>
+                            <label><input type="checkbox" value="C" name="lan" class="inline">C </label>
+                            <label><input type="checkbox" value="C++" name="lan" class="inline">C++ </label>
+                            <label><input type="checkbox" value="java" name="lan" class="inline">Java </label>
+                            <label><input type="checkbox" value="Javascript" name="lan" class="inline"> Javascript</label>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label>Any comment or suggestion?
+ 
+                        <textarea id="comment" row="4" colunm="10" class="input-textarea" placeholder="Enter your comment here"></textarea>
+                        </label>
+                        </fieldset>
+                    <input type="submit" id="submit" value="Submit">
+    </form>    
+</body>
+</html>

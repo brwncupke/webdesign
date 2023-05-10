@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet survey</title>
+</head>
+ 
+<body style="text-align: center; background-color: beige; background-image: url('pets.jpg'); background-position: top; background-size: cover;">
+    <h1 style="text-align: center; color: darkred;">Pet questionnaire Survay</h1>
+    <main>
+        <section>
+    <p style="text-align: center; color: brown;">Thank you for visiting Pet survay!</p>
+</section>
+    <section>
+        <form>
+            <section>
+        <h1 style="color: cornflowerblue;">1. Do you personally own the pet?</h1>
+        <label style="color:dimgrey;"><input id="pet" type="radio" name="pet" value="Yes" checked>Yes</label> 
+        <label style="color:dimgrey;"><input id="pet" type="radio" name="pet" value="No">No</label>
+    
+        <h1 style="color: cornflowerblue;">2. Which type of pet do you think is the:</h1>
+        <label style="color:dimgrey;">The best pet </label><input id="pettypes" type="text" name="bestpet"></p>
+        <label style="color:dimgrey;">The cutest  </label><input id="pettypes" type="text" name="cutest"></p>
+      
+        <h1 style="color: cornflowerblue;">3. What is your favorite or preferred type of pet?</h1>
+        <input id="dog" type="checkbox" name="category" value="dog" checked> <label for="dog" style="color:dimgrey;">Dog</label>
+        <input id="cat" type="checkbox" name="category" value="Cat"> <label for="cat" style="color:dimgrey;">Cat</label>
+        <input id="Bird" type="checkbox" name="category" value="Bird"> <label for="bird" style="color:dimgrey;">Bird</label>
+        <input id="hamster" type="checkbox" name="category" value="hamster"> <label for="hamster" style="color:dimgrey;">Hamster</label>
+    </section>
+    <section>
+        <br><input type="text" name="petphoto" placeholder="Pet photo URL" required>
+        <button type="submit"> Submit </button></section>
+    </form>
+</section>
+</main>
+<footer style=" position: absolute; bottom: 0; left: 0;">
+    <p>
+        Picture credit to owner
+    </p>
+  </footer>
+</body>
+</html>
